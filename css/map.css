@@ -1,0 +1,379 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body-section2{
+    background-image:linear-gradient(to bottom, rgba(3, 3, 3, 0.733), rgba(7, 7, 7, 0.73)),
+    url(/img/theme.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    
+}
+
+
+
+
+path:hover, circle:hover {
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+
+
+
+
+.container-section2{
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    height: auto;
+}
+
+
+
+.map, .right{
+  margin: 20px auto;
+}
+  
+.image {
+  display: block;
+
+}
+
+.overlay {
+    position: relative;
+    top: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(10, 10, 10, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color:white;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    display:inline-flex;
+    justify-content: space-between;   
+}
+
+.overlay-hover:hover .overlay {
+  opacity: 1;
+}
+
+  
+
+
+
+.section2-col-left,
+.section2-col-right{
+  padding:0;
+}
+      
+.image {
+        display: block;
+        width: 100%;
+        height: auto;
+}
+
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+    .demo {
+    opacity: 0.6;
+  }
+
+.row{
+  margin: 0 15px;
+}
+  
+  .row > .column {
+    padding:0;
+
+    
+  
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.425);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;   
+    padding: 0;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(247, 245, 245, 0.74);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+.map{
+  margin:auto;
+  
+}
+.map-content{
+  padding: 0 15px;
+  margin: 20px 0;
+}
+
+#map-content-heading{
+  color: white;
+  font-weight: 700;
+}
+
+
+
+#map-content-small{
+  color:lightgrey;
+  font-size: 15px;
+  margin: 20px auto 40px auto;
+}
+
+.section2-box-text-content-city{
+  font-size:50px;
+  font-weight: 700;
+  border:1px solid white;
+  height: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-right:none;
+  border-bottom:none;
+  background-image:linear-gradient(to bottom, rgba(3, 3, 3, 0.733), rgba(7, 7, 7, 0.73)), url(/img/city1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.section2-box-text-content-city > a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.section2-box-text-content-city > a:hover{
+  color:white;
+}
+
+
+.container1{
+  background-image: url(/img/city4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  border-bottom-left-radius: 25px;
+  
+}
+
+.container2{
+  background-image: url(/img/city2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  border-top-right-radius: 25px;
+}
+
+.container3{
+  background-image: url(/img/city3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  border-bottom-right-radius: 25px;
+}
+
+.section2-box-text-content-nature{
+  font-size:50px;
+  font-weight: 700;
+  border:1px solid white;
+  height: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 25px;
+  border-left:none;
+  border-top:none;
+  background-image:linear-gradient(to bottom, rgba(3, 3, 3, 0.733), rgba(7, 7, 7, 0.73)), url(/img/nature1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+a{
+  color:rgba(255, 255, 255, 0.493);
+}
+.section2-box-text-content-nature > a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+.container4{
+  background-image: url(/img/nature4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  border-bottom-right-radius: 25px;
+}
+
+.container5{
+  background-image: url(/img/nature2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  border-bottom-left-radius: 25px;
+  
+}
+
+.container6{
+  background-image: url(/img/nature3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  
+}
+
+.section2-subcontent{
+  margin: 30px auto;
+}
+
+.section2-box-text-content-culture{
+  font-size:50px;
+  font-weight: 700;
+  border:1px solid white;
+  height: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border-left:none;
+  border-top:none;
+  background-image:url(/img/culture.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.section2-box-text-content-culture > a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+
+.section2-box-text-content-more{
+  font-size:50px;
+  font-weight: 700;
+  border:1px solid white;
+  height: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border-left:none;
+  border-top:none;
+  background-image:url(/img/more.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section2-box-text-content-more > a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
