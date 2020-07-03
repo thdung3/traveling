@@ -199,7 +199,6 @@ find a partner slide */
   .findapartner-section {
     height: 100%;
     width: 100%;
-<<<<<<< HEAD
   }
   
   .card-findapartner {
@@ -237,12 +236,6 @@ find a partner slide */
     left: 0px;
     height: 260px;
     background-color: rgba(38, 127, 154, 0.427);
-=======
-    background-color: rgba(0, 0, 0, 0.2);
-    /* background-color: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4); */
-    /* background-color: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4); */
-    opacity: 0.5;
->>>>>>> firstpage
     z-index: 1;
   }
   
@@ -257,3 +250,139 @@ find a partner slide */
     
   
   }
+
+  body{
+    color: white;
+}
+
+nav a {
+    color: white !important;
+}
+.background-image {
+    /* The image used */
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("img/background-image.jpg");
+  
+    /* Full height */
+    /* height: 100%;  */
+    height: 100vh;
+    /* min-height: 500px; */
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#first .container { 
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#second { 
+    /* margin-top: -30px; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.middle{
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-dark {
+    background-color:transparent !important;
+    transition: 250ms ease;
+}
+.bg-dark.scrolled {
+    background-color: rgba(36, 8, 8, 0.2) !important;
+    transition: 750ms ease;
+}
+/* .btn-background{
+    border-radius: 30px;
+} */
+.btn-background:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    animation: animate 16s linear infinite;
+}
+@keyframes animate {
+    0% 
+    {
+        background-position: 0%;
+    }
+    100% 
+    {
+        background-position: 400%;
+    }
+}
+
+#second {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+#second video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+#second .container {
+    position: relative;
+    z-index: 2;
+}
+  
+#second .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4); */
+    opacity: 0.5;
+    z-index: 1;
+}
+  
+@media (pointer: coarse) and (hover: none) {
+#second {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+}
+#second video {
+    display: none;
+}
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
