@@ -113,3 +113,48 @@ find a partner slide */
   background-color: transparent;
   border: none;
 }
+/* 
+About us Styles */
+
+.about-card{
+  border: none;
+}
+.about-card-title {
+  color: white;
+text-align: center;
+margin-top: 1rem;
+font-weight: 400;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 250;
+  width: 150px;
+  margin-top: 1.5rem;
+  margin-left: 10%;
+}
+.base-color{
+  background-color: white;
+  display: column;
+}
+
+.background-about-card {
+  border-radius: 10px;
+  top: 0px;
+  left: 0px;
+  height: 260px;
+  background-color: rgba(38, 127, 154, 0.427);
+  z-index: 1;
+}
+
+.icons-about {
+  font-size: 60px;
+  text-align: center;
+}
+
+.about-container{
+  display: flex;
+  justify-content: center;
+
+
+}
