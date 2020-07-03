@@ -111,6 +111,7 @@ nav a {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     /* background-color: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4); */
+    /* background-color: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4); */
     opacity: 0.5;
     z-index: 1;
 }
