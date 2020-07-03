@@ -118,33 +118,45 @@ About us Styles */
 
 .about-card{
   border: none;
+  min-width: 220px;
+  margin:15px;
+  max-height: 800px;
 }
+
+.text-title {
+  margin-top: 20px;
+}
+
 .about-card-title {
-  color: white;
-text-align: center;
-margin-top: 1rem;
-font-weight: 400;
+  color:red;
+  margin:0;
+  font-weight: 400;
+  padding:0;
 }
 
 .profile-img {
   border-radius: 50%;
-  height: 250;
-  width: 150px;
-  margin-top: 1.5rem;
-  margin-left: 10%;
+  width:80%;
+  height:70%;
+  margin-top:50px;
+  
 }
 .base-color{
   background-color: white;
-  display: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .background-about-card {
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   top: 0px;
   left: 0px;
-  height: 260px;
+  height: 35%;
   background-color: rgba(38, 127, 154, 0.427);
-  z-index: 1;
+  
 }
 
 .icons-about {
@@ -155,6 +167,4 @@ font-weight: 400;
 .about-container{
   display: flex;
   justify-content: center;
-  
-
 }
