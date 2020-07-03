@@ -5,21 +5,21 @@ counters.forEach(counter => {
     const updateCount = () => {
         const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
-        console.log('counter.innerText:',counter.innerText)
-        console.log('target:',target)
+        console.log('counter.innerText:', counter.innerText)
+        console.log('target:', target)
 
         const inc = target / speed;
-        console.log('inc:',inc)
+        console.log('inc:', inc)
 
-        if(count < target) {
+        if (count < target) {
             // counter.innerText = Math.ceil(count + inc);
             counter.innerText = parseFloat((count + inc).toFixed(3));
-            console.log('counter:',Math.ceil(count + inc))
+            console.log('counter:', Math.ceil(count + inc))
             setTimeout(updateCount, 1);
         }
         else {
             count.innerText = target;
-        }    
-}
-updateCount();
+        }
+    }
+    updateCount();
 });
