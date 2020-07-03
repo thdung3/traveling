@@ -1,13 +1,12 @@
-
 /* 
 find a partner slide */
 
 @media (max-width: 768px) {
   .carousel-inner .carousel-item > div {
-      display: none;
+    display: none;
   }
   .carousel-inner .carousel-item > div:first-child {
-      display: block;
+    display: block;
   }
 }
 
@@ -19,40 +18,94 @@ find a partner slide */
 
 /* display 3 */
 @media (min-width: 768px) {
-  
   .carousel-inner .carousel-item-right.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(33.333%);
   }
-  
-  .carousel-inner .carousel-item-left.active, 
+
+  .carousel-inner .carousel-item-left.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-33.333%);
   }
 }
 
 .carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-transform: translateX(0);
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
 }
 
 .findapartner-align {
-  border-radius: 10px;
   display: flex;
   align-items: center;
-  border: 2px solid black;
+  margin: auto;
   width: 100%;
 }
 
+.title-main-findapartner{
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  
+}
+  
 .title-findapartner {
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  padding-top: 3rem;
+  margin-top: 2rem;
+  background-color: aliceblue;
+  border-radius: 10px;
+  opacity: 0.55;
+}
+
+.title-findapartner:hover {
+  background-color: rgb(215, 102, 102);
+  opacity: .5;
+  border-radius: 10px;
 }
 
 .text-findapartner {
-font-weight: 300;
-font-size: 18px;
-text-align: center;
+  background-color: aliceblue;
+  opacity: 0.5;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}
+
+.background-image {
+  /* Full height */
+  /* height: 100%;  / */
+  height: 100vh;
+  /* min-height: 500px; / */
+
+  /* / Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-findapartner-bg {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgb(56, 85, 61)),
+    url("https://images.unsplash.com/photo-1489659429806-4069d3fcde9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2239&q=80");
+}
+
+.findapartner-section {
+  height: 100%;
+  width: 100%;
+}
+
+.card-findapartner {
+  background-color: transparent;
+  border: none;
+}
+
+.findapartner-container {
+  margin: ;
 }
