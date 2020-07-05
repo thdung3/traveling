@@ -104,7 +104,14 @@ path:hover, circle:hover {
     opacity: 0.6;
   }
 
-.row{
+.city-img-box > .row{
+  margin: 0 15px;
+}
+.modal-content > .row{
+  margin: 0 15px;
+}
+
+.nature-img-box > .row{
   margin: 0 15px;
 }
   
