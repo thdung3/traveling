@@ -480,3 +480,112 @@ nav a {
 .form-row{
   margin: 20px auto;
 }
+
+
+/* Quoc Hoang section .................... */
+.section4-top{
+  padding-top: 5%;
+}
+.section4 i{
+  font-size: 40px;
+}
+
+.section4 p{
+  margin-top: 10px;
+}
+
+.titleq{
+  text-align: center;
+  margin-right: 30px;
+}
+
+.titleq2{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.section4{
+  background-color: #004c3f;
+  color: white;
+}
+
+.main2 i:hover{
+  cursor: pointer;
+  color: black;
+}
+.titleq2:hover{
+  cursor: pointer;
+  color: black;
+}
+
+.main1{
+  padding-bottom: 5%;
+  padding-top: 4%;
+}
+
+footer{
+  background-color: black;
+  color: black;
+  padding-bottom: 100px;
+  
+
+  width: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer-area{
+  display: flex;
+  justify-content: center;
+}
+footer i{
+  font-size: 25px;
+  margin: 10px;
+}
+
+.footer-icon{
+  display: flex;
+}
+
+footer i:hover{
+  cursor: pointer;
+  color: white
+}
+ul  li {
+  list-style: none;
+}
+
+
+
+.textq{
+  font-size: 40px;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+footer a:hover{
+  text-decoration: none;
+  color: white
+}
+
+.textq2{
+  color: white;
+}
+
+footer p{
+  margin-top: 10px;
+}
