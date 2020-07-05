@@ -48,7 +48,7 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+.mani > h1 {
     font-size: 40px;
     font-weight: 500;
     text-align: center;
@@ -59,7 +59,7 @@ h1 {
   align-items: center;
 }
 
-img {
+.img-about {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
@@ -116,14 +116,14 @@ img {
   padding-top: 1rem;
   text-align: center;
   padding: 1rem;
-  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.32), rgba(117, 19, 93, 0.50));
   /* background-color: rgb(215, 102, 102); */
   border-radius: 15px;
 }
 
 .card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
+  color: black;
+  font-size: 2.1rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -131,9 +131,63 @@ img {
 }
 
 .card_text {
-  color: #ffffff;
+  color: black;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;    
   font-weight: 400;
+}
+
+/* Nav bar style */
+
+
+nav a {
+  color: black !important;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 80%;
+  height: 70%;
+  margin-top: 50px;
+}
+.base-color {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-about-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 0px;
+  left: 0px;
+  height: 35%;
+  background-color: rgba(38, 127, 154, 0.427);
+}
+
+.bg-dark {
+  background-color: transparent !important;
+  transition: 250ms ease;
+}
+.bg-dark.scrolled {
+  background-color: rgba(36, 8, 8, 0.2) !important;
+  transition: 750ms ease;
+}
+/* .btn-background{
+    border-radius: 30px;
+} */
+.btn-background:hover {
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  animation: animate 16s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
