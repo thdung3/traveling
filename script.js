@@ -12,8 +12,8 @@ counters.forEach(counter => {
         console.log('inc:', inc)
 
         if (count < target) {
-            // counter.innerText = Math.ceil(count + inc);
-            counter.innerText = parseFloat((count + inc).toFixed(3));
+            counter.innerText = Math.ceil(count + inc);
+
             console.log('counter:', Math.ceil(count + inc))
             setTimeout(updateCount, 1);
         }
