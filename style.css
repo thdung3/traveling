@@ -1,28 +1,53 @@
 .section4-box{
     /* background-image: url(/img/section4-bg.jpg); */
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin:0 auto;
+    display:flex;
+    justify-content: flex-end;
+    padding:50px 0;
+
     }
     
-    .section-center{
+    /* /* .section-center{
     display:flex;
     justify-content: flex-end;
     /* align-items: center; */
-    }
+    
     
     .subscribe-box{
     background-color: lightgray;
     opacity: 60%;
-    width: 400px;
+    min-width: 300px;
+    max-width: 500px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-weight: 400;
     }
+
+    .btn-sub{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      width:100%;
+      padding:0 5px;
+    }
+
+    .left-btn-sub{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+  .form-check-label{
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+    
     
     .btn-primary {
         border: 0px;
@@ -30,13 +55,13 @@
         background-color: var(--gray);
       }
     
-      .background {
+      .section-community {
         /* The image used */
-        background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.522),rgba(5, 5, 5, 0.522)),url(/img/section4-bg.jpg);
+        background-image: linear-gradient(to right, rgba(253, 252, 252, 0),rgba(5, 5, 5, 0.522)),url(/img/section4-bg.jpg);
     
         /* / Full height / */
         /* / height: 100%;  / */
-        height: 100vh;
+        height: 100%;
         /* / min-height: 500px; / */
     
         /* / Center and scale the image nicely */ 
@@ -79,7 +104,7 @@
     border-bottom: 1px darkgray solid;
     padding-bottom: 20px;
     }
-    }
+    
     
     .section4-counters{
       /* background-image: url(/img/section4-bg.jpg); */
@@ -89,6 +114,8 @@
       padding-right: 100px;
       font-family: Arial, Helvetica, sans-serif;
       }
+
+    }
 
 /* 
 ------------------------------------find a partner slide ------------------------------- */
@@ -180,7 +207,7 @@
   .background-image {
     /* Full height */
     /* height: 100%;  / */
-    height: 100vh;
+    height: 100%;
     /* min-height: 500px; / */
   
     /* / Center and scale the image nicely */
@@ -190,7 +217,7 @@
   }
   
   .img-findapartner-bg {
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,6 +300,11 @@
 nav a {
     color: white !important;
 }
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
 .background-image {
     /* The image used */
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("img/background-image.jpg");
@@ -384,66 +416,6 @@ nav a {
     }
 }
 
-/* #second {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  } */
-  
-/* #second video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+.form-row{
+  margin: 20px auto;
 }
-  
-#second .container {
-    position: relative;
-    z-index: 2;
-}
-  
-#second .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 0.5;
-    z-index: 1;
-}
-
-.about-container{
-  display: flex;
-  justify-content: center;
-}
-  
-@media (pointer: coarse) and (hover: none) {
-#second {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-}
-#second video {
-    display: none;
-}
-} */
-/* 
-.carousel-item {
-    height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} */

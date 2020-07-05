@@ -12,6 +12,9 @@
     background-position: center;
     height: 100%;
     
+    align-items: center;
+    display:flex;
+    
 }
 
 
@@ -34,6 +37,8 @@ path:hover, circle:hover {
     display:flex;
     align-items: center;
     height: auto;
+    justify-content: center;
+
 }
 
 
@@ -66,6 +71,7 @@ path:hover, circle:hover {
 
 .overlay-hover:hover .overlay {
   opacity: 1;
+  cursor: default;
 }
 
   
@@ -126,7 +132,7 @@ path:hover, circle:hover {
     padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100%  ;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.425);
@@ -146,11 +152,12 @@ path:hover, circle:hover {
   .close {
     color: white;
     position: absolute;
-    top: 10px;
-    right: 25px;
+    top:0;
+    right: 10px;
     font-size: 35px;
     font-weight: bold;
-  }
+    }
+  
   
   .close:hover,
   .close:focus {
@@ -219,6 +226,7 @@ path:hover, circle:hover {
 #map-content-heading{
   color: white;
   font-weight: 700;
+  text-align: left;
 }
 
 
@@ -227,10 +235,12 @@ path:hover, circle:hover {
   color:lightgrey;
   font-size: 15px;
   margin: 20px auto 40px auto;
+  text-align: justify;
 }
 
 .section2-box-text-content-city{
   font-size:50px;
+  min-width: 115px;
   font-weight: 700;
   border:1px solid white;
   height: 100px;
@@ -243,17 +253,16 @@ path:hover, circle:hover {
   background-image:linear-gradient(to bottom, rgba(3, 3, 3, 0.733), rgba(7, 7, 7, 0.73)), url(/img/city1.jpg);
   background-size: cover;
   background-position: center;
+  color: rgba(211, 211, 211, 0.493);
 }
 
 
 
-.section2-box-text-content-city > a{
-  cursor: pointer;
-  text-decoration: none;
-}
 
-.section2-box-text-content-city > a:hover{
+
+.section2-box-text-content-city:hover{
   color:white;
+  cursor: pointer;
 }
 
 
@@ -263,19 +272,23 @@ path:hover, circle:hover {
   background-position: center;
   height: 100px;
   border-bottom-left-radius: 25px;
+  max-width:640px;
+  min-width:175px;
+  position: relative;
   
 }
 
 .container2{
-  background-image: url(/img/city2.jpg);
+  background-image: url(/img/city5.jpg);
   background-size: cover;
   background-position: center;
   height: 100px;
   border-top-right-radius: 25px;
 }
+ 
 
 .container3{
-  background-image: url(/img/city3.jpg);
+  background-image: url(/img/s2-hoi-an.jpg);
   background-size: cover;
   background-position: center;
   height: 100px;
@@ -293,17 +306,17 @@ path:hover, circle:hover {
   border-bottom-right-radius: 25px;
   border-left:none;
   border-top:none;
-  background-image:linear-gradient(to bottom, rgba(3, 3, 3, 0.733), rgba(7, 7, 7, 0.73)), url(/img/nature1.jpg);
+  background-image:linear-gradient(to bottom, rgba(3, 3, 3, 0.733), rgba(7, 7, 7, 0.73)), url(/img/nature5.jpg);
   background-size: cover;
   background-position: center;
+  color: rgba(211, 211, 211, 0.493);
 }
 
 a{
   color:rgba(255, 255, 255, 0.493);
 }
-.section2-box-text-content-nature > a:hover{
+.section2-box-text-content-nature:hover{
   cursor: pointer;
-  text-decoration: none;
   color:white;
 }
 .container4{
@@ -349,6 +362,7 @@ a{
   background-image:url(/img/culture.jpg);
   background-size: cover;
   background-position: center;
+  margin-top: 10px;
 }
 .section2-box-text-content-culture > a:hover{
   cursor: pointer;
@@ -370,6 +384,7 @@ a{
   background-image:url(/img/more.jpg);
   background-size: cover;
   background-position: center;
+  margin-top: 10px;
 }
 
 .section2-box-text-content-more > a:hover{

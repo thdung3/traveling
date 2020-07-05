@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="css/map.css">
-  <!-- <script type="text/javascript" src="map.js"></script> -->
 </head>
 
 <body>
@@ -19,12 +18,9 @@
     <a class="navbar-brand text-white" href="#">
       <img src="img/logo.png" alt="" witdth="150" height="50"> Yup Yup
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-end style="min-width="300px;" id="navbarSupportedContent">
       <!-- <ul class="navbar-nav mr-auto"> -->
       <ul class="navbar-nav">
         <li class="nav-item active">
@@ -86,7 +82,7 @@
 
             <div class="right col-sm-8">
                 <div class="map-content">
-                    <h2 id="map-content-heading">Places most rated by our community</h2>
+                    <h2 id="map-content-heading">Most rated places by our community</h2>
                     <p id="map-content-small">Vietnam has never such that closed to you, be immerse this beautiful country with your travel mates. Choose wisely or you just click <a href="#">here</a> to join our community, so we can help you more.<p>
                 </div>
                 
@@ -94,13 +90,13 @@
                     <div class="city-img-box">
                         <div class="row">
                         <div class="section2-col-left col-sm-6">
-                            <div class="section2-box-text-content-city"><a href="#">City</a></div>
-                            <div class="container1 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(1)"><a href="#"><div class="overlay"><span>Ta Hien - Ha Noi</span><span>128 <i class="fas fa-heart-circle"></i></span></div></a></div>    
+                            <div class="section2-box-text-content-city" alt="Avatar" onclick="openModal();currentSlide(1)">City</div>
+                            <div class="container1 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(2)"><div class="overlay"><span>Ta Hien - Ha Noi</span><span>128 <i class="fas fa-heart-circle"></i></span></div></div>    
                         </div>
                         
                         <div class="section2-col-left col-sm-6">
-                                <div class="container2 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(2)"><a href="#"><div class="overlay"><span>Hang Than - Ha Noi</span><span>256 <i class="fas fa-heart-circle"></i></span></div></a></div>
-                                <div class="container3 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(3)"><a href="#"><div class="overlay"><span>Hoi An - Da Nang</span><span>512 <i class="fas fa-heart-circle"></i></span></div></a></div>  
+                                <div class="container2 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(3)"><div class="overlay"><span>Cai Rang - Can Tho</span><span>256 <i class="fas fa-heart-circle"></i></span></div></div>
+                                <div class="container3 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(4)"><div class="overlay"><span>Hoi An - Da Nang</span><span>512 <i class="fas fa-heart-circle"></i></span></div></div>  
                         </div>
                         </div>
                     </div>
@@ -109,7 +105,7 @@
                 <!----pop-up lightbox box 1-->     
                 <div class="city-img-box-function">
                     <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        
                         <div class="modal-content">
                             
                           <div class="mySlides">
@@ -118,15 +114,15 @@
                           </div>
                           <div class="mySlides">
                             <div class="numbertext">2 / 8</div>
-                            <img src="img/city2.jpg" style="width: 100%;">
+                            <img src="/img/city4.jpg" style="width: 100%;">
                           </div>
                           <div class="mySlides">
                             <div class="numbertext">3 / 8</div>
-                            <img src="img/city3.jpg" style="width: 100%;">
+                            <img src="img/city5.jpg" style="width: 100%;">
                           </div>
                           <div class="mySlides">
                             <div class="numbertext">4 / 8</div>
-                            <img src="img/city4.jpg" style="width: 100%;">
+                            <img src="/img/s2-hoi-an.jpg" style="width: 100%;">
                           </div>
                           <div class="mySlides">
                             <div class="numbertext">5 / 8</div>
@@ -142,11 +138,11 @@
                           </div>
                           <div class="mySlides">
                             <div class="numbertext">8 / 8</div>
-                            <img src="img/nature1.jpg" style="width: 100%;">
+                            <img src="img/nature5.jpg" style="width: 100%;">
                           </div>
                           
                           
-                
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 
@@ -159,27 +155,27 @@
                                 <img class="demo cursor" src="img/city1.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Bui Vien - HCMC">
                             </div>
                             <div class="column col-sm-3">
-                                <img class="demo cursor" src="img/city2.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Pho Co - Ha Noi">
+                                <img class="demo cursor" src="img/city4.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Ta hien - Ha Noi">
                             </div>
                             <div class="column col-sm-3">
-                                <img class="demo cursor" src="img/city3.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Hoi An - Da Nang">
+                                <img class="demo cursor" src="img/city5.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Sa Dec - Dong Thap">
                             </div>
                             <div class="column col-sm-3">
-                                <img class="demo cursor" src="img/city4.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Ta Hien - Ha Noi">
+                                <img class="demo cursor" src="img/s2-hoi-an.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Hoi An - Da Nang">
                             </div>
                             </div>
                             <div class="row">
                                 <div class="column col-sm-3">
-                                    <img class="demo cursor" src="img/nature1.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                                    <img class="demo cursor" src="img/nature4.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Trang An - Ninh Binh">
                                 </div>
                                 <div class="column col-sm-3">
-                                    <img class="demo cursor" src="img/nature4.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Nature and sunrise">
+                                    <img class="demo cursor" src="img/nature2.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Ha Long - Quang Ninh">
                                 </div>
                                 <div class="column col-sm-3">
-                                    <img class="demo cursor" src="img/nature3.jpg" style="width: 100%" onclick="currentSlide(7)" alt="Nature and sunrise">
+                                    <img class="demo cursor" src="img/nature3.jpg" style="width: 100%" onclick="currentSlide(7)" alt="My Khe - Da Nang">
                                 </div>
                                 <div class="column col-sm-3">
-                                    <img class="demo cursor" src="img/nature2.jpg" style="width: 100%" onclick="currentSlide(8)" alt="Nature and sunrise">
+                                    <img class="demo cursor" src="img/nature5.jpg" style="width: 100%" onclick="currentSlide(8)" alt="Mu Cang Chai - Yen Bai">
                                 </div>
                                 </div>
                             
@@ -191,13 +187,13 @@
                  <div class="nature-img-box">
                     <div class="row">
                         <div class="section2-col-left col-sm-6">
-                            <div class="container4 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(5)"><a href="#"><div class="overlay"><span>Quang Binh</span><span>4096 <i class="fas fa-heart-circle"></i></span></div></a></div>
-                            <div class="container5 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(6)"><a href="#"><div class="overlay"><span>Ha Long Bay</span><span>2048 <i class="fas fa-heart-circle"></i></span></div></a></div>      
+                            <div class="container4 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(5)"><div class="overlay"><span>Ninh Binh</span><span>4096 <i class="fas fa-heart-circle"></i></span></div></div>
+                            <div class="container5 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(6)"><div class="overlay"><span>Ha Long Bay</span><span>2048 <i class="fas fa-heart-circle"></i></span></div></div>      
                         </div>
                         
                         <div class="section2-col-left col-sm-6">
-                            <div class="container6 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(7)"><a href="#"><div class="overlay"><span>Da Nang</span><span>1024 <i class="fas fa-heart-circle"></i></span></div></a></div>
-                            <div class="section2-box-text-content-nature"><a href="#">Nature</a></div>
+                            <div class="container6 overlay-hover column" alt="Avatar" onclick="openModal();currentSlide(7)"><div class="overlay"><span>Da Nang</span><span>1024 <i class="fas fa-heart-circle"></i></span></div></div>
+                            <div class="section2-box-text-content-nature" alt="Avatar" onclick="openModal();currentSlide(8)">Nature</div>
                         </div>
                     </div>
                 </div>
@@ -308,23 +304,12 @@
   <!-- End Find a Partner -->
 
   <!-- Comunity -->
-  <section>
-    1
-  </section>
-
-  <section>
-    2
-  </section>
-
-  <section>
-    3
-  </section>
 
 
-  <section>
-    <div class="background">
+  <section class= section-community>
+    <!-- <div class="background"> -->
       <div class="section4-box">
-        <div class="section-center">
+        <!-- <div class="section-center"> -->
           <div class="subscribe-box">
             <div>
               <h5 class="text-center">Best travel website for Vietnam travelers!</h5>
@@ -352,48 +337,23 @@
                     <input type="favorite-city" class="form-control" id="favorite-city" placeholder="Ho Chi Minh City">
                   </div>
 
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <div class="form-check btn-sub">
+                    <div class="left-btn-sub">
+                    <input type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
-                      I agree to subscribe. </label>
-                    <button type="submit" class="btn btn-primary" style="font-size:small">Subscribe</button>
+                      I agree </label>
+                    </div>
+                    <div class="right-btn-sub"><button type="submit" class="btn btn-primary" style="font-size:small">Subscribe</button></div>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="section4-counters">
-        <div class="counters">
-          <div class="counters-container">
-            <div>
-              <i class="far fa-newspaper fa-4x"></i>
-              <div class="counter" data-target="902500">0</div>
-              <h3>Subscribers</h3>
-            </div>
-            <div>
-              <i class="far fa-star fa-4x"></i>
-              <div class="counter" data-target="4.8">0</div>
-              <h3>Rating</h3>
-            </div>
-            <div>
-              <i class="fab fa-facebook-f fa-4x"></i>
-              <div class="counter" data-target="10940">0</div>
-              <h3>Likes</h3>
-            </div>
-            <div>
-              <i class="fab fa-instagram fa-4x"></i>
-              <div class="counter" data-target="55400">0</div>
-              <h3>Follwers</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+        <!-- </div> -->
+      <!-- </div> -->
+  
     </div>
-    </div>
-    </div>
-    </div>
+  
   </section>
 
 <!-- End community -->
@@ -415,7 +375,10 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3aaa0f0c37.js" crossorigin="anonymous"></script> <!--added fontawesome link-->
     <script type="text/javascript" src="slide.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    
 
 </body>
 
