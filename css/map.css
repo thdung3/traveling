@@ -268,7 +268,8 @@ path:hover, circle:hover {
 
 
 .section2-box-text-content-city:hover{
-  color:white;
+  color: #00f3ff !important;
+  text-shadow: 0 0 15px #00f3ff;
   cursor: pointer;
 }
 
@@ -324,7 +325,8 @@ a{
 }
 .section2-box-text-content-nature:hover{
   cursor: pointer;
-  color:white;
+  color: #00f3ff !important;
+  text-shadow: 0 0 15px #00f3ff;
 }
 .container4{
   background-image: url(/img/nature4.jpg);
@@ -374,7 +376,9 @@ a{
 .section2-box-text-content-culture > a:hover{
   cursor: pointer;
   text-decoration: none;
-  color:white;
+  /* color: #00f3ff !important; */
+  color: white;
+  text-shadow: 0 0 15px #00f3ff;
 }
 
 .section2-box-text-content-more{
@@ -397,5 +401,6 @@ a{
 .section2-box-text-content-more > a:hover{
   cursor: pointer;
   text-decoration: none;
-  color:white;
+  color: white;
+  text-shadow: 0 0 15px #00f3ff;
 }
